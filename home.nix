@@ -21,6 +21,7 @@
     vesktop
 		wezterm
 		flameshot
+		anki
     # discord
     # (pkgs.discord.override {
     #   withVencord = true;
