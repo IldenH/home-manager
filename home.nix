@@ -9,10 +9,12 @@
 
   imports = [
     ./programs/neovim.nix
+    ./programs/texlive.nix
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   home.packages = with pkgs; [
-    # neovim
     neofetch
     firefox
     vesktop
