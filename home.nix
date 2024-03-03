@@ -20,6 +20,7 @@
     firefox
     vesktop
 		wezterm
+		flameshot
     # discord
     # (pkgs.discord.override {
     #   withVencord = true;
