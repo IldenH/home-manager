@@ -23,6 +23,8 @@
 		flameshot
 		anki
 		unclutter # doesn't work on wayland
+		bat
+		eza
     # discord
     # (pkgs.discord.override {
     #   withVencord = true;
