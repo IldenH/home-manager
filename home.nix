@@ -11,6 +11,7 @@
     ./programs/neovim.nix
     ./programs/texlive.nix
 		# ./programs/terminal.nix
+		./programs/neofetch/neofetch.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
