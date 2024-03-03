@@ -22,6 +22,7 @@
 		wezterm
 		flameshot
 		anki
+		unclutter # doesn't work on wayland
     # discord
     # (pkgs.discord.override {
     #   withVencord = true;
