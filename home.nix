@@ -10,6 +10,7 @@
   imports = [
     ./programs/neovim.nix
     ./programs/texlive.nix
+		# ./programs/terminal.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -18,6 +19,7 @@
     neofetch
     firefox
     vesktop
+		wezterm
     # discord
     # (pkgs.discord.override {
     #   withVencord = true;
