@@ -13,7 +13,7 @@
     vimdiffAlias = true;
 
     extraPackages = with pkgs; [
-      # xclip
+      xclip
       wl-clipboard
 
       nodePackages.neovim
