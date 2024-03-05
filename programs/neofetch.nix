@@ -1,4 +1,9 @@
-print_info() {
+{ pkgs, ... }:
+
+{
+	home.packages = [ pkgs.neofetch ];
+	home.file.".config/neofetch/config.conf".text = ''
+	print_info() {
 		prin "$(color 16)- ~ Hello $(color 1)IldenH ~ -"
 		prin ""
 
@@ -46,3 +51,5 @@ separator=":"
 # this order: 'title', '@', 'underline', 'subtitle', 'colon', 'info'
 colors=(1 1 3 4 5 6)
 ascii_colors=(distro)
+	'';
+}
