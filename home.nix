@@ -12,6 +12,7 @@
     ./programs/texlive.nix
 		# ./programs/terminal.nix
 		./programs/neofetch.nix
+		./programs/japanese.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
