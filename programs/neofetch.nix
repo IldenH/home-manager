@@ -4,7 +4,7 @@
 	home.packages = [ pkgs.neofetch ];
 	home.file.".config/neofetch/config.conf".text = ''
 	print_info() {
-		prin "$(color 16)- ~ Hello $(color 1)IldenH ~ -"
+		prin "$(color 5)- ~ Hello $(color 1)IldenH ~ -"
 		prin ""
 
     info "You are using" distro
@@ -25,7 +25,7 @@
     info underline
 		prin ""
 		output=""
-		for i in {0..17}; do
+		for i in {0..7}; do
 			output="$output$(color $i)# "
 		done
 		prin "$output"

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   home = {
@@ -8,21 +8,23 @@
   };
 
   imports = [
+		inputs.nix-colors.homeManagerModules.default
     ./programs/neovim.nix
     ./programs/texlive.nix
-		# ./programs/terminal.nix
+		./programs/terminal.nix
 		./programs/neofetch.nix
 		./programs/japanese.nix
 		# ./programs/themes.nix # choses light theme for some reason
 		./programs/zsh.nix
   ];
 
+	colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
+
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
     firefox
     vesktop
-		wezterm
 		flameshot
 		anki
 		unclutter # doesn't work on wayland

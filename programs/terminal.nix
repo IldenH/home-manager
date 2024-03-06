@@ -20,7 +20,7 @@
 				selection_bg = "#${base02}";
 				scrollbar_thumb = "#${base03}";
 				split = "#${base02}";
-				compose_cursor = "${base07}";
+				compose_cursor = "#${base07}";
 				ansi = [
 					"#${base00}"
 					"#${base08}"
@@ -48,9 +48,11 @@
 			enable_wayland = true,
 			color_scheme = "base16",
 			window_background_opacity = 0.92,
-			use_fancy_tab_bar = false,
+			use_fancy_tab_bar = true,
+			window_close_confirmation = "NeverPrompt",
 			font = wezterm.font "JetBrainsMono Nerd Font",
 			font_size = 11.5,
+			window_decorations = "NONE",
 		}
 		return config
 		'';
