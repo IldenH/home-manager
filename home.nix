@@ -33,6 +33,7 @@
 		authenticator
 		python311
 		xorg.xmodmap
+		geogebra6
   ];
 
 	programs = {
