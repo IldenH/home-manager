@@ -13,6 +13,7 @@
 		# ./programs/terminal.nix
 		./programs/neofetch.nix
 		./programs/japanese.nix
+		# ./programs/themes.nix # choses light theme for some reason
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -29,6 +30,8 @@
 		heroic
 		thunderbird
 		authenticator
+		python311
+		xorg.xmodmap
 
     # discord
     # (pkgs.discord.override {
