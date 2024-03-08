@@ -36,6 +36,7 @@
 		python311
 		xorg.xmodmap
 		geogebra6
+		calc
   ];
 
 	programs = {

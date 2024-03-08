@@ -44,6 +44,10 @@
 		};
 		initExtra = ''
 			neofetch
+			mkcdir = () {
+				mkdir -p -- "$1" &&
+				cd -P -- "$1"
+			}
 			ex = () {
 				if [ -f $1 ] ; then
 					case $1 in
