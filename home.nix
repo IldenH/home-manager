@@ -9,13 +9,7 @@
 
   imports = [
 		inputs.nix-colors.homeManagerModules.default
-    ./programs/neovim.nix
-    ./programs/texlive.nix
-		./programs/terminal.nix
-		./programs/neofetch.nix
-		./programs/japanese.nix
-		# ./programs/themes.nix # choses light theme for some reason
-		./programs/zsh.nix
+		./programs
   ];
 
 	colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
