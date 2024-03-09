@@ -28,8 +28,6 @@
 		flameshot
 		anki
 		unclutter # doesn't work on wayland
-		bat
-		eza
 		heroic
 		thunderbird
 		authenticator

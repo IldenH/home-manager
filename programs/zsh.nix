@@ -4,7 +4,7 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    enableAutosuggestions = true;
+    # enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
@@ -14,11 +14,6 @@
 			cat = "bat";
 			rg = "batgrep";
 
-			ls = "eza --color=always --group-directories-first --icons";
-			la = "eza -a --color=always --group-directories-first --icons";
-			ll = "eza -l --color=always --group-directories-first --icons";
-			lt = "eza -aT --color=always --group-directories-first --icons";
-			l = "eza -lah --color=always --group-directories-first --icons";
 			cls = "clear && neofetch && ls";
 
 			makkergruppe = "~/Desktop/T1/makkergruppe.sh";
@@ -39,8 +34,11 @@
 			backup = "cd ~/Desktop/Macros/bash-scripts/backup";
 
 			nix = "cd ~/Nixos";
-			home = "cd ~/.config/home-manager";
+			hm = "cd ~/.config/home-manager";
 			nvimconf = "nvim ~/.config/nvim";
+
+			nixbuild = "sudo nixos-rebuild switch --flake ~/Nixos/#desktop";
+			hmbuild = "home-manager switch";
 		};
 		initExtra = ''
 			neofetch
@@ -77,4 +75,23 @@
     enable = true;
     enableZshIntegration = true;
   };
+	programs.bat.enable = true;
+	programs.eza = {
+		enable = true;
+		git = true;
+		icons = true;
+		enableAliases = true;
+		extraOptions = [
+			"--color=always"
+			"--group-directories-first"
+			"--header"
+			"--no-quotes"
+			"--hyperlink"
+			# "--total-size" # takes awhile to run
+		];
+	};
+	programs.thefuck = {
+		enable = true;
+		enableZshIntegration = true;
+	};
 }
