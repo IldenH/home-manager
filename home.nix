@@ -12,7 +12,7 @@
 		./programs
   ];
 
-	colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
+	colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
 
   nixpkgs.config.allowUnfree = true;
 

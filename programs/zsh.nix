@@ -16,6 +16,7 @@
 		shellAliases = {
 			cat = "bat";
 			rg = "batgrep";
+			cd = "z";
 
 			cls = "clear && neofetch && ls";
 
@@ -29,6 +30,9 @@
 			music = "cd ~/Music";
 			pics = "cd ~/Pictures";
 			vids = "cd ~/Videos";
+
+			".." = "cd ..";
+			"..." = "cd ../..";
 
 			pymacros = "cd ~/Desktop/Macros/python-macros";
 			bashsh = "cd ~/Desktop/Macros/bash-scripts";
@@ -79,6 +83,8 @@
     enableZshIntegration = true;
   };
 	programs.bat.enable = true;
+	programs.ripgrep.enable = true;
+	home.packages = [ pkgs.bat-extras.batgrep ];
 	programs.eza = {
 		enable = true;
 		git = true;
@@ -94,6 +100,10 @@
 		];
 	};
 	programs.thefuck = {
+		enable = true;
+		enableZshIntegration = true;
+	};
+	programs.zoxide = {
 		enable = true;
 		enableZshIntegration = true;
 	};
