@@ -2,14 +2,11 @@
 
 {
 	imports = [
-    ./neovim.nix
-    ./texlive.nix
-		./terminal.nix
-		./japanese.nix
-		./zsh.nix
-		./git.nix
 		./discord.nix
 		./hyprland
+		./japanese.nix
 		./other.nix
+		./shell
+		./texlive.nix
 	];
 }

@@ -2,8 +2,8 @@
 
 {
 	imports = [
-		./hyprland.nix
 		./gammastep.nix
+		./hyprland.nix
 		./themes.nix
 	];
 }
