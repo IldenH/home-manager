@@ -6,10 +6,10 @@
     ./texlive.nix
 		./terminal.nix
 		./japanese.nix
-		# ./themes.nix # choses light theme for some reason
 		./zsh.nix
 		./git.nix
 		./discord.nix
+		./hyprland
 		./other.nix
 	];
 }

@@ -9,6 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 		nix-colors.url = "github:misterio77/nix-colors";
+		hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
