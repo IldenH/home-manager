@@ -5,6 +5,18 @@
 		vesktop
 	];
 
+	home.file.".config/vesktop/settings.json".source = pkgs.writeText "settings.json" /* json */ ''
+	{
+    "discordBranch": "stable",
+    "minimizeToTray": false,
+    "staticTitle": true,
+    "splashTheming": true,
+    "checkUpdates": false
+	}
+	'';
+
+	home.file.".config/vesktop/settings/settings.json".source = ./discord-settings.json;
+
 	# Auto-generated color scheme, inspired by https://github.com/deathbeam/base16-discord
 	home.file.".config/vesktop/themes/base16.theme.css".source = with config.colorScheme.palette; pkgs.writeText "base16.theme.css" /* css */ ''
 		/**
