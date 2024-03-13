@@ -4,6 +4,10 @@
 	imports = [
 		./neofetch.nix
 	];
+	home.packages = with pkgs; [
+		bat-extras.batgrep
+		tldr
+	];
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -84,7 +88,6 @@
   };
 	programs.bat.enable = true;
 	programs.ripgrep.enable = true;
-	home.packages = [ pkgs.bat-extras.batgrep ];
 	programs.eza = {
 		enable = true;
 		git = true;
