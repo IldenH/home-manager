@@ -46,7 +46,6 @@
 
 			nix = "cd ~/Nixos";
 			hm = "cd ~/.config/home-manager";
-			nvimconf = "nvim ~/.config/nvim";
 
 			nixbuild = "sudo nixos-rebuild switch --flake ~/Nixos/#desktop";
 			hmbuild = "home-manager switch";
