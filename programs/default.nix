@@ -3,7 +3,7 @@
 {
 	imports = [
 		./discord.nix
-		./hyprland
+		# ./hyprland
 		./japanese.nix
 		./other.nix
 		./shell
